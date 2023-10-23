@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NFL Player Data</title>
+</head>
+<body>
+    <h1>Should I Draft Christian Mccaffrey?</h1>
+    <p>Enter : 18877 to see Christian Mccaffrey's Stat Projections</p>
+    <p>Enter : 18876 to see David Njoku's Stat Projections</p>
+    <form method="POST" action="/">
+        <label for="player_id">Enter Player ID (5 digits):</label>
+        <input type="text" id="player_id" name="player_id" required>
+        <button type="submit">Submit</button>
+    </form>    
+    
+    {% if error_message %}
+    <p>{{ error_message }}</p>
+    {% endif %}
+</body>
+</html>
